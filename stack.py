@@ -10,18 +10,15 @@ def isempty(stack):
 def isfull(stack, n):
     return len(stack) == n
 
-
 def push(stack, item):
     stack.append(item)
 
-
 def pop(stack):
-    stack.pop()
-
+    if len(stack)!=0:
+        stack.pop()
 
 def peek(stack):
     return stack[-1]
-
 
 n = 3
 a = create(n)
